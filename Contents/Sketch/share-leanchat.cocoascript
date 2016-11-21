@@ -1,0 +1,14 @@
+@import 'api.js'
+
+
+var onRun = function(context) {
+  
+  var doc = context.document;                // the current document (MSDocument)
+
+  if (getLeanchatWebhook() == false) {
+	setLeanChatWebHook(doc)
+   }
+
+    exportArtboardsAndSendTo(context)  
+};
+

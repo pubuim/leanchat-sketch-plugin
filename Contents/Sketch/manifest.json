@@ -1,0 +1,31 @@
+{
+  "author" : "trigged",
+  "identifier" : "com.leanchat.sketch.leanchat-sketch-plugin",
+  "version" : "1.0.0",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "homepage": "https://pubu.im",
+  "description" : "Share Artboard to Leanchat",
+  "authorEmail" : "trigged@pubucloud.com",
+  "name" : "leanchat-sketch-plugin",
+   "commands": [
+    {
+      "name": "Edit WebHook",
+      "identifier": "edit",
+      "script": "edit-webhook.cocoascript"
+    },
+    {
+      "name": "Share to Leanchat",
+      "identifier": "share",
+      "shortcut": "cmd shift f",
+      "script": "share-leanchat.cocoascript"
+    }
+  ],
+  "menu" : {
+    "items" : [
+      "edit",
+      "share"
+    ],
+    "title" : "Share to Leanchat"
+  }
+}
